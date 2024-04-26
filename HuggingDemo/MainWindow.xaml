@@ -1,0 +1,24 @@
+﻿<Window x:Class="HuggingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HuggingDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <WrapPanel Orientation="Horizontal" Width="800">
+            <WrapPanel Orientation="Vertical" Width="350" Margin="10,30,0,0" >
+                <TextBlock Text="图片地址："></TextBlock>
+                <TextBox x:Name="textBox" Height="25" Width="350" Margin="0,0,0,10"></TextBox>
+                <Button  Height="25" Width="350" Content="识别" Click="Button_Click" Margin="0,0,0,10"></Button>
+                <TextBlock x:Name="textBlock" Text="" Width="350"></TextBlock>
+            </WrapPanel>
+            <WrapPanel Orientation="Vertical" Margin="10,10,0,0">
+                <Image x:Name="pictureBox" Width="380" Height="420"></Image>
+            </WrapPanel>
+        </WrapPanel>
+
+
+    </Grid>
+</Window>
